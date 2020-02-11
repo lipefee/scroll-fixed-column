@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.css"> -->
+
+	
+</head>
+<body>
+
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			var screenHeight = $(window).height();
+			// $('.fixed-column').each(function(index, element) {
+			$('.column-test').each(function(index, element) {
+
+
+
+
+			});
+
+			showScreenInfos();
+
+		});
+
+
+		function showElementsInfos(element) {
+
+			const el = $(element);
+			const win = $(window);
+			const doc = $(document);
+
+			el.scroll(function(e) {
+
+
+
+
+				$('#width').html('width : ' + screen.width);
+				$('#height').html('height : ' + screen.height);
+				$('#availWidth').html('availWidth : ' + screen.availWidth);
+				$('#availHeight').html('availHeight : ' + screen.availHeight);
+				$('#colorDepth').html('colorDepth : ' + screen.colorDepth);
+				$('#pixelDepth').html('pixelDepth : ' + screen.pixelDepth);
+
+			});
+
+		}
+
+	</script>
+	
+	<div class="row">
+		<div class="container">
+			<div style="margin: 25px 0; position: fixed; left: 1%; top: 0;">
+				<p id="width"></p>
+				<p id="height"></p>
+				<p id="availWidth"></p>
+				<p id="availHeight"></p>
+				<p id="colorDepth"></p>
+				<p id="pixelDepth"></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="col-md-12">
+
+				<div class="table-content" style="margin: 25px 0;">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nome</th>
+								<th>Data Nascimento</th>
+								<th>Sexo</th>
+								<th>Infos</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td><div class="fixed-column column-test">Felipe Silvestri</div></td>
+								<td>04/08/1992</td>
+								<td>M</td>
+								<td>
+									<div>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><div class="fixed-column">Felipe Silvestri</div></td>
+								<td>04/08/1992</td>
+								<td>M</td>
+								<td>
+									<div>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><div class="fixed-column">Felipe Silvestri</div></td>
+								<td>04/08/1992</td>
+								<td>M</td>
+								<td>
+									<div>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><div class="fixed-column">Felipe Silvestri</div></td>
+								<td>04/08/1992</td>
+								<td>M</td>
+								<td>
+									<div>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+										<p>KS01I2NF8SKS9282KS002M1SDSD</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
